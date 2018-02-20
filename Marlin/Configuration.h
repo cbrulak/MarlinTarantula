@@ -31,7 +31,7 @@
 /**
  * Equipment options
  */
-//#define LARGE_BED
+#define LARGE_BED
 #define SDSUPPORT
 //#define CHANGE_Y_DIRECTION      // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION      // If your X carriage homes in the wrong direction (it should move right to left) enable this.
@@ -72,7 +72,7 @@
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
 //#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
-//#define SN04          // Green sensor
+#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
@@ -82,10 +82,10 @@
  * Must choose one of these other than MANUAL if a Z-Probe type is selected.
  */
 //#define TRIPOINT
-//#define LINEAR
+#define LINEAR
 //#define BILINEAR
 //#define UBL
-#define MANUAL
+//#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
