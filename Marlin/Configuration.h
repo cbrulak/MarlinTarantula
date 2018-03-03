@@ -31,6 +31,7 @@
 /**
  * Equipment options
  */
+
 #define LARGE_BED
 #define SDSUPPORT
 //#define CHANGE_Y_DIRECTION      // If your bed homes in the wrong direction (it should move front to back) enable this.
@@ -106,7 +107,7 @@
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
-#define BED_MARGIN         0
+#define BED_MARGIN         10
 
 /**
  * Servo probe deploy and stow angles
@@ -753,15 +754,15 @@
 #elif ENABLED(INDUCTIVE_NC)
   #define Z_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #else
-  #define Z_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+  #define Z_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #endif
-#define X_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-#define Y_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-#define Z_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+#define X_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
+#define Y_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
+#define Z_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #if ENABLED(BLTOUCH) || ENABLED(INDUCTIVE_NC)
   #define Z_MIN_PROBE_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #elif ENABLED(SN04) || ENABLED(INDUCTIVE_NO) || ENABLED(SERVO_PROBE)
-  #define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+  #define Z_MIN_PROBE_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #else
   //#define Z_MIN_PROBE_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #endif
